@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CurricuForge</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SMALL FLOATING THEME BUTTON -->
+<button id="themeToggle" class="theme-btn">🌙</button>
+
+<div class="hero">
+<h1>CurricuForge ✈️</h1>
+<p>AI Powered Curriculum Builder for Smart Educators</p>
+</div>
+
+<div class="main-container">
+
+<!-- LEFT PANEL -->
+<div class="input-panel">
+<h2>📝 Create Curriculum</h2>
+
+<label>📚 Subject</label>
+<input id="subject" placeholder="e.g. Data Structures" type="text">
+
+<label>📊 Skill Level</label>
+<input id="level" placeholder="Beginner / Intermediate / Advanced" type="text">
+
+<label>⏱️ Duration</label>
+<input id="duration" placeholder="e.g. 6 Weeks" type="text">
+
+<button onclick="generate()">✨ Generate AI Curriculum</button>
+
+<div class="bloom-box">
+<h3>Bloom’s Taxonomy</h3>
+<div class="bloom-grid">
+<div class="remember">Remember</div>
+<div class="understand">Understand</div>
+<div class="apply">Apply</div>
+<div class="analyze">Analyze</div>
+<div class="evaluate">Evaluate</div>
+<div class="create">Create</div>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="output-panel">
+<h2>Generated Curriculum</h2>
+<div id="result" class="output-box">
+Your AI-generated curriculum will appear here...
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
